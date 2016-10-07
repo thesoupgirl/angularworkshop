@@ -11,7 +11,7 @@ Okay now to make our webapp actually appear, we need our index.html file.  At th
     
 If you're seeing that, then you're in the right file!  Congrats! :) Now let's get to the importance of our index.html file...
 
-```<!-- load bootstrap and fontawesome via CDN -->
+<!-- load bootstrap and fontawesome via CDN -->
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
 
@@ -41,6 +41,9 @@ If you're seeing that, then you're in the right file!  Congrats! :) Now let's ge
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
       <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
       <script src="portfolio.controller.js"></script>
-    </head>```
+    </head>
     
-    Meow
+ 
+# Imports
+Above are all the files needed to make our wonderful webapp look how it is.  The first series of links give us Bootstrap styling without actually having to ever download it!  Nifty, huh?
+
