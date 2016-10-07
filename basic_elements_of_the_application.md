@@ -4,4 +4,7 @@ As far as AngularJS goes, it is a front-end, or UI framework for Javascript.  Ba
 
 *Disclaimer:  This tutorial will not go over Node.js, since it is only being used for deployment purposes and nothing else.  Everything important is on the front-end.*
 
-Okay now to make our webapp actually appear, we need our index.html file.
+Okay now to make our webapp actually appear, we need our index.html file.  At the very top of it, you'll see 
+```<!-- index.html -->
+    <!DOCTYPE html>
+    <html>```
