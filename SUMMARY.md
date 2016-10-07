@@ -1,6 +1,6 @@
 # Summary
 
-* [About This Tutorial](about_this_tutorial.md)
+* [Introduction](README.md)
 * [Getting Started](getting_started.md)
 * [README](readme.md)
 
