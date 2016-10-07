@@ -8,3 +8,6 @@ Okay now to make our webapp actually appear, we need our index.html file.  At th
 ```<!-- index.html -->
     <!DOCTYPE html>
     <html>```
+    
+If you're seeing that, then you're in the right file!  Congrats! :) Now let's get to the importance of our index.html file...
+
