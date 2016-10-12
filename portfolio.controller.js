@@ -8,6 +8,7 @@ portfolioApp.controller("Portfolio",["$scope", function($scope) {
 	$scope.isAboutMe = false;
 	$scope.isResume = false;
 	$scope.showResumePic = false;
+	$scope.showResumeLink = false;
 
 
 	$scope.clickedAboutMe = function() {
@@ -34,6 +35,15 @@ portfolioApp.controller("Portfolio",["$scope", function($scope) {
     			}
     			else {
                 	$scope.showResumePic = true;
+            	}
+    }
+
+    $scope.showLink = function() {
+    			if($scope.showResumeLink) {
+    				$scope.showResumeLink = false;
+    			}
+    			else {
+                	$scope.showResumeLink = true;
             	}
     }
 
