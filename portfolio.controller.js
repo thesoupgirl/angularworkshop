@@ -1,27 +1,18 @@
-var portfolioApp = angular.module('portfolioApp',["ngRoute"]);
-portfolioApp.config(['$routeProvider',
-  function($routeProvider) {
-    $routeProvider.
-      when("/body", {
-      	controller : "Portfolio",
-        templateUrl : "/index.html"
-    })
-    .when("/aboutme", {
-    	controller : "Portfolio",
-        templateUrl : "/aboutme.html"
-    })
-    .when("/projects", {
-        templateUrl : "/projects.html"
-    })
-    .when("/resume", {
-        templateUrl : "/resume.html"
-    });
-}]);
+var portfolioApp = angular.module('portfolioApp',[]);
 
 portfolioApp.controller("Portfolio",["$scope", function($scope) {
 	$scope.name = "Lisa";
 	$scope.universityMajor = "Purdue Computer Science";
 	$scope.passion = "Student and Web Developer";
+	$scope.isHome = true;
+	$scope.isAboutMe = false;
+	$scope.isResume = false;
+
+
+	$scope.clickedAboutMe = function() {
+                $scope.isAboutMe = true;
+                $scope.isHome = false;
+    }
 
 
 
@@ -144,19 +135,3 @@ $(document).ready(function(){
 });
 
 }]);
-
-portfolioApp.config(function($routeProvider) {
-    $routeProvider
-    .when("/body", {
-        templateUrl : "index.html"
-    })
-    .when("/aboutme", {
-        templateUrl : "aboutme.html"
-    })
-    .when("/projects", {
-        templateUrl : "projects.html"
-    })
-    .when("/resume", {
-        templateUrl : "resume.html"
-    });
-});
