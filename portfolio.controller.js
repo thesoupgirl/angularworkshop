@@ -3,16 +3,18 @@ portfolioApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when("/body", {
-        templateUrl : "index.html"
+      	controller : "Portfolio",
+        templateUrl : "/index.html"
     })
     .when("/aboutme", {
-        templateUrl : "aboutme.html"
+    	controller : "Portfolio",
+        templateUrl : "/aboutme.html"
     })
     .when("/projects", {
-        templateUrl : "projects.html"
+        templateUrl : "/projects.html"
     })
     .when("/resume", {
-        templateUrl : "resume.html"
+        templateUrl : "/resume.html"
     });
 }]);
 
