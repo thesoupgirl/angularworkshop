@@ -12,11 +12,19 @@ portfolioApp.controller("Portfolio",["$scope", function($scope) {
 	$scope.clickedAboutMe = function() {
                 $scope.isAboutMe = true;
                 $scope.isHome = false;
+                $scope.isResume = false;
     }
 
     $scope.clickedHome = function() {
                 $scope.isAboutMe = false;
                 $scope.isHome = true;
+                $scope.isResume = false;
+    }
+
+    $scope.clickedResume = function() {
+                $scope.isAboutMe = false;
+                $scope.isHome = false;
+                $scope.isResume = true;
     }
 
 
