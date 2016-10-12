@@ -11,3 +11,7 @@ If it doesn't tell you what version of Python you're running, then you'll need t
 Download Python using [this](https://www.python.org/downloads/).  (You can skip this step if you already have Python.)
 
 Now that you have Python, we can run our local server using this command line command here:  ```python -m SimpleHTTPServer 8000```
+
+Now you can few your site by going to localhost:8000 in your browser!
+
+To stop running the server, use the shortcut keys `control + c`.
