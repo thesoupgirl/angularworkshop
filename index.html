@@ -240,7 +240,12 @@
           
           <div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
             <p>Hello!  Thanks for taking so much time out of your day to actually view my resume!  Since you are so kind as to view my resume, I thought I'd do the same by giving you two options to see my resume below:</p>
-            <button>Click for Download Link</button> <button>Click to View Below</button>
+            <div style="margin-top: 50px;">
+              <button class="btn">Click for Download Link</button> <button ng-click="showResume()">Click to View Below</button>
+            </div>
+            <div ng-if="showResumePic">
+              <img src="resumetemplate.png">
+            </div>
           </div>
 
           

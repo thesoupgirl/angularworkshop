@@ -7,6 +7,7 @@ portfolioApp.controller("Portfolio",["$scope", function($scope) {
 	$scope.isHome = true;
 	$scope.isAboutMe = false;
 	$scope.isResume = false;
+	$scope.showResumePic = false;
 
 
 	$scope.clickedAboutMe = function() {
@@ -25,6 +26,10 @@ portfolioApp.controller("Portfolio",["$scope", function($scope) {
                 $scope.isAboutMe = false;
                 $scope.isHome = false;
                 $scope.isResume = true;
+    }
+
+    $scope.showResume = function() {
+                $scope.showResumePic = true;
     }
 
 
