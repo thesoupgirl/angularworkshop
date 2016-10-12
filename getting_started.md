@@ -1,16 +1,6 @@
 # Getting Started
+The boilerplate or starter code for the web application is hosted on Github.  It can be found here:  [Link](https://github.com/P2PLisa/angularworkshop)
+In order to get a copy of the code from Github onto your computer, you can use git to clone it if you're familiar with it or you can just download the zip file containing the code.
+If you'd like to clone, here are some helpful instructions:  [Instructions Here](https://help.github.com/articles/cloning-a-repository/)
 
-Create a Github account.  Github is found here:  [Link](https://github.com/)
-
-Create an account for Heroku.  Heroku is found here:  [Link](https://www.heroku.com/)
-
-Now, we will need to create a repository on Github and then link Heroku to it.
-
-Blah Blah Blah
-
-Next, fork this repository [here](https://github.com/thesoupgirl/angularworkshop) by clicking 'fork' in the top right hand corner.
-Clone the repository following these instructions:  [Instructions Here](https://help.github.com/articles/cloning-a-repository/)
-
-Next, set up Heroku to deploy from the branch you're currently on, which is most likely named master.  Instructions for that can be found here:  [Click Here](https://developer.github.com/guides/automating-deployments-to-integrators/)
-
-Congrats!  Now you should be able to see your own version of the app deployed.  Let's go onto editing it to make it your own...
+Congrats!  Now you have a copy of the code for the app to get started.  Next, we'll get into how to actually see what it looks like...
