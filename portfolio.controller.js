@@ -128,7 +128,7 @@ $(document).ready(function(){
 
 portfolioApp.config(function($routeProvider) {
     $routeProvider
-    .when("/", {
+    .when("/body", {
         templateUrl : "index.html"
     })
     .when("/aboutme", {
