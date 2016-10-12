@@ -29,7 +29,12 @@ portfolioApp.controller("Portfolio",["$scope", function($scope) {
     }
 
     $scope.showResume = function() {
-                $scope.showResumePic = true;
+    			if($scope.showResumePic) {
+    				$scope.showResumePic = false;
+    			}
+    			else {
+                	$scope.showResumePic = true;
+            	}
     }
 
 
