@@ -31,8 +31,25 @@
       <script src="jquery.parallax-1.1.3.js"></script>
       <script src="jquery.appear.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
       <script src="portfolio.controller.js"></script>
+      <script>
+    portfolioApp.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "index.html"
+    })
+    .when("/aboutme", {
+        templateUrl : "aboutme.html"
+    })
+    .when("/projects", {
+        templateUrl : "projects.html"
+    })
+    .when("/resume", {
+        templateUrl : "resume.html"
+    });
+});
+      </script>
     </head>
    <body ng-controller="Portfolio">
     <!-- 

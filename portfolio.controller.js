@@ -125,19 +125,3 @@ $(document).ready(function(){
 });
 
 }]);
-
-portfolioApp.config(function($routeProvider) {
-    $routeProvider
-    .when("/", {
-        templateUrl : "index.html"
-    })
-    .when("/aboutme", {
-        templateUrl : "aboutme.html"
-    })
-    .when("/projects", {
-        templateUrl : "projects.html"
-    })
-    .when("/resume", {
-        templateUrl : "resume.html"
-    });
-});
