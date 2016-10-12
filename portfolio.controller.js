@@ -4,6 +4,24 @@ portfolioApp.controller("Portfolio",["$scope", function($scope) {
 	$scope.universityMajor = "Purdue Computer Science";
 	$scope.passion = "Student and Web Developer";
 
+
+var a = this;
+a.homePageShowing = true;
+a.showAboutMe = false;
+
+a.ToggleTab = function(tabId) {
+    a.homePageShowing = tabId === homePageShowing;
+    a.showAboutMe = tabId === showAboutMe;
+}
+init();
+function init() {
+    // Get the tabID parameter from the URL (via $routeParams)
+    var tabId = $routeParams.tabId;
+    if (tabId !== undefined) {
+        a.ToggleTab(tabId);
+    }
+}
+
 	/* ========================================================================= */
 /*	Preloader
 /* ========================================================================= */
@@ -123,3 +141,10 @@ $(document).ready(function(){
 });
 
 }]);
+
+portfolioApp.config(['$routeProvider', function($routeProvider) {
+ $routeProvider.when('/view:tabId', {
+   templateUrl: 'view1/view.html',
+   controller: 'ViewCtrl'
+ });
+}])
