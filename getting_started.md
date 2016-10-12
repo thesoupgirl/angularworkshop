@@ -2,12 +2,6 @@
 
 Create a Github account.  Github is found here:  [Link](https://github.com/)
 
-Create an account for Heroku.  Heroku is found here:  [Link](https://www.heroku.com/)
-
-Now, we will need to create a repository on Github and then link Heroku to it.
-
-Blah Blah Blah
-
 Next, fork this repository [here](https://github.com/thesoupgirl/angularworkshop) by clicking 'fork' in the top right hand corner.
 Clone the repository following these instructions:  [Instructions Here](https://help.github.com/articles/cloning-a-repository/)
 
