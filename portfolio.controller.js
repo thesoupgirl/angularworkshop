@@ -147,4 +147,4 @@ portfolioApp.config(['$routeProvider', function($routeProvider) {
    templateUrl: 'view1/view.html',
    controller: 'ViewCtrl'
  });
-}])
+}]);
