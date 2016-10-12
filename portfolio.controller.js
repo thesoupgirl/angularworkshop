@@ -14,7 +14,7 @@ portfolioApp.controller("Portfolio",["$scope", function($scope) {
                 $scope.isHome = false;
     }
 
-    	$scope.clickedHome = function() {
+    $scope.clickedHome = function() {
                 $scope.isAboutMe = false;
                 $scope.isHome = true;
     }
