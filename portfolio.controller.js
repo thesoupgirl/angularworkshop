@@ -2,7 +2,7 @@ var portfolioApp = angular.module('portfolioApp',["ngRoute"]);
 portfolioApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      .when("/body", {
+      when("/body", {
         templateUrl : "index.html"
     })
     .when("/aboutme", {
