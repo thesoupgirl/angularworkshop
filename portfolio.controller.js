@@ -1,4 +1,4 @@
-var portfolioApp = angular.module('portfolioApp',[]);
+var portfolioApp = angular.module('portfolioApp',["ngRoute"]);
 portfolioApp.controller("Portfolio",["$scope", function($scope) {
 	$scope.name = "Lisa";
 	$scope.universityMajor = "Purdue Computer Science";
@@ -125,3 +125,19 @@ $(document).ready(function(){
 });
 
 }]);
+
+portfolioApp.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "index.html"
+    })
+    .when("/aboutme", {
+        templateUrl : "aboutme.html"
+    })
+    .when("/projects", {
+        templateUrl : "projects.html"
+    })
+    .when("/resume", {
+        templateUrl : "resume.html"
+    });
+});

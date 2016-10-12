@@ -33,25 +33,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
       <script src="portfolio.controller.js"></script>
-      <script>
-    var portfolioApp = angular.module("portfolioApp", ["ngRoute"]);
-    portfolioApp.config(function($routeProvider) {
-    $routeProvider
-    .when("/", {
-        templateUrl : "index.html"
-    })
-    .when("/aboutme", {
-        templateUrl : "aboutme.html"
-    })
-    .when("/projects", {
-        templateUrl : "projects.html"
-    })
-    .when("/resume", {
-        templateUrl : "resume.html"
-    });
-});
-      </script>
-    </head>
+  </head>
    <body ng-controller="Portfolio">
     <!-- 
         Fixed Navigation
