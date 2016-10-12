@@ -61,7 +61,7 @@
         <!-- main nav -->
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
-                        <li class="current"><a href="#body"> Home </a></li>
+                        <li class="current"><a href="#body" ng-click="clickedHome()"> Home </a></li>
                         <li><a href="#aboutme" ng-click="clickedAboutMe()">About Me</a></li>
                         <li><a href="#resume">Resume</a></li>
                         <li><a href="#projects">Projects</a></li>
@@ -78,8 +78,8 @@
         <!--
         Home Slider
         ==================================== -->
-    <section id="slider">
     <div ng-show="isHome">
+    <section id="slider">
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       
         <!-- Indicators bullet -->
@@ -117,7 +117,6 @@
         
       </div>
     </section>
-  </div>
     
         <!--
         End Home SliderEnd
@@ -184,6 +183,7 @@
         </div>
       </div>
     </section>
+  </div>
     
         <!--
         End Mini-Me
