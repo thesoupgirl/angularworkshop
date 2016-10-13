@@ -8,5 +8,5 @@
 * [Adding Angular](adding_angular.md)
 * [Controller Fundamentals](controller_fundamentals.md)
 * [Extra:  Deploy With Heroku](extra_deploy_with_heroku.md)
-* Tab Navigation
+* [Tab Navigation](tab_navigation.md)
 
