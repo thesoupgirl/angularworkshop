@@ -1,10 +1,10 @@
 # Controller Fundamentals
 
 Okay now let's make our controller file, portfolio.controller.js, an actual controller!  Inside that file, add the following to the end of it:  
-`portfolioApp.controller("Portfolio",["$scope", function($scope) {
+```portfolioApp.controller("Portfolio",["$scope", function($scope) {
     //controller code goes here
 
-}]);`
+}]);```
 
 This creates a controller hung off of our Angular module, portfolioApp.  You can have more than controller or in our case, we'll only have one, but Angular is very flexible with how many controllers you can have.
 
