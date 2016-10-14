@@ -1,5 +1,6 @@
 # Summary
 
+* [Introduction](README.md)
 * [Introduction](readme.md)
 * [Getting Started](getting_started.md)
 * [Local Server](local_server.md)
