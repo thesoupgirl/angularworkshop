@@ -4,12 +4,15 @@ As far as AngularJS goes, it is a front-end, or UI framework for Javascript.  Ba
 
 
 Okay now to make our webapp actually appear, we need our index.html file.  At the very top of it, you'll see 
-```<!-- index.html -->
+```html
+<!-- index.html -->
     <!DOCTYPE html>
-    <html>```
+    <html>
+```
     
 If you're seeing that, then you're in the right file!  Congrats! :) Now let's get to the importance of our index.html file...
 
+```html
 <!-- index.html -->
     <!DOCTYPE html>
     <html>
@@ -18,8 +21,7 @@ If you're seeing that, then you're in the right file!  Congrats! :) Now let's ge
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
 
-      <!-- CSS
-    ================================================== -->
+      <!-- CSS ================================================== -->
     <!-- Fontawesome Icon font -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Twitter Bootstrap css -->
@@ -32,7 +34,7 @@ If you're seeing that, then you're in the right file!  Congrats! :) Now let's ge
         <link rel="stylesheet" href="css/main.css">
     <!-- media-queries -->
         <link rel="stylesheet" href="css/media-queries.css">
-    
+    ```
  
 # Imports
 Above are all the files needed to make our wonderful webapp look how it is.  The first series of links give us Bootstrap styling without actually having to ever download it!  Nifty, huh?
