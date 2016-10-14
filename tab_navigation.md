@@ -6,7 +6,7 @@ About ```ng-show```:  It takes a function or boolean and if it is true, then it'
 
 In order to be able to use ng-show, we're going to need to create a variable for each tab in our application.  To start off, let's just do 2.  One for the Home page and one for the About Me page.  In the controller (portfolio.controller.js) add a variable hung off of scope ($scope) for Home and one for About Me.  The home one should be true and the about me one should be set to false.  In the end, your portfolio.controller.js should look something like this:
 
-```
+```javascript
 var portfolioApp = angular.module('portfolioApp',[]);
 
 portfolioApp.controller("Portfolio",["$scope", function($scope) {
