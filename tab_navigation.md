@@ -18,7 +18,7 @@ portfolioApp.controller("Portfolio",["$scope", function($scope) {
 
 Great!  Now we have two booleans for two of our tabs in the application.  Now let's actually use the ng-show attribute.  In your index.html file, we will need to add the ng-show attribute to a tag \(could be a div tag, body tag, etc.\) that contains all of the home page and none of the other pages/tabs.  However, we want the navigation bar to show up in all of our pages, so we will need to be very careful to not add the ng-show attribute to a tag that contains our navigation bar.  To find out which tag we should add ng-show to, let's go back to our browser and open up the inspector once more.
 
-You'll see that in the inspector, there's a nav tag.  Inside the nav tag, you should see the following:  
+You'll see that in the inspector, there's a nav tag.  Inside the nav tag, you should see the following:
 
 ```
 <!-- main nav -->
@@ -27,7 +27,7 @@ You'll see that in the inspector, there's a nav tag.  Inside the nav tag, you sh
             <li class="current"><a href="#body">Home</a></li>
 ```
 
-The_ li _tag that contains home is the one that belongs to the home page.  This is the one where we are going to start making the magic happen.  However, before we can do anything, we want to make sure angular only changes tabs whenever the user clicks the tab.  In order to make this work, we need to go back to our controller file, which is portfolio.controller.js
+The\_ li \_tag that contains home is the one that belongs to the home page.  This is the one where we are going to start making the magic happen.  However, before we can do anything, we want to make sure angular only changes tabs whenever the user clicks the tab.  In order to make this work, we need to go back to our controller file, which is portfolio.controller.js
 
 Inside our controller, below the variables we added earlier such as $scope.isAboutMe, we are going to create a function called clickedHome.
 
@@ -69,7 +69,7 @@ Now to let our HTML know about these fabulous new functions...Let's go back to o
 <li class="current"><a href="#body" ng-click="clickedHome()"> Home </a></li>
 ```
 
-Now we've just added the angular attribute tag, ng-click.  Ng-click will only call the function clickedHome\(\) in our controller if the home navigation tab is clicked.  
+Now we've just added the angular attribute tag, ng-click.  Ng-click will only call the function clickedHome\(\) in our controller if the home navigation tab is clicked.
 
 Let's do that for the other tab, About Me.
 
@@ -78,4 +78,24 @@ Let's do that for the other tab, About Me.
 ```
 
 Even after you do all this, you might notice that nothing will happen.  That's because we haven't added our ng-show attribute tags anywhere!
+
+As far as our ng-show attribute tags go, it's very important where we put them.  We want to put it around all the html code that we want to show if they clicked our home page.  I'm going to add a div right after the header closing tag.
+
+```
+</header>
+<!-- End Fixed Navigation -->
+
+<!-- Home Slider -->
+<div ng-show="isHome">
+<section id="slider">
+```
+
+Since I added a new div tag, I now need to close it.  I'm going to add a closing div tag after the closing section tag.
+
+```
+    </section>
+</div>
+```
+
+Now we have the newly created div showing only if the user clicked home.
 
