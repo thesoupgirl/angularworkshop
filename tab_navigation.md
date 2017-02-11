@@ -1,4 +1,4 @@
-# Tab Navigation
+# Tab Navigation Part 1
 
 There are many ways to do tab navigation, especially with Angular, but I personally think the easiest is by using `ng-show`.
 
